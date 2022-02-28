@@ -1,0 +1,37 @@
+#footer {
+       position: fixed; /* Фиксированное положение */
+       left: 0; bottom: 0; /* Левый нижний угол */
+        padding: 10px; /* Поля вокруг текста */
+        background: #000ecf; /* Цвет фона */
+        color: #fff; /* Цвет текста */
+        width: 100%; /* Ширина слоя */
+      }
+      #table {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #dddddd;
+       border-collapse: collapse; 
+      }
+      th {
+        font-weight: bold;
+        padding: 5px;
+       background: #efefef;
+        border: 1px solid #dddddd;
+      }
+      td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+        text-align: center;
+     }
+      tbody tr:nth-child(odd) {
+        background-color: #C9E4F6;/* фон нечетных строк */
+      }
+      tbody tr:nth-child(even) {
+        background-color: #B4DAF2;/* фон четных строк */
+      }
+
+
+OL { counter-reset: item }
+LI { display: block }
+LI:before { content: counters(item, ".") " "; counter-increment: item }
+

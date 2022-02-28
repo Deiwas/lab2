@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Опрос</title>
+  </head>
+
+  <body>
+    <h1>Анкетирование: искусственный интеллект</h1>
+    <p></p>
+    <H3>Мы проводим исследование об уровне осведомленности людей в вопросе развития технологий ИИ. Если хотите поучаствовать в опросе, заполните анкету ниже.</H3>
+    <form action="cgi-bin/handler.py" method="get">
+      <div class="FIO">
+        <p>
+          <strong>Фамилия:</strong>
+          <input type="text" name="second_name" />
+        </p>
+        <p>
+          <strong>Ваше имя:</strong>
+          <input type="text" name="first_name" />
+        </p>
+        <p>
+          <strong>Отчество:</strong>
+          <input type="text" name="patronymic" />
+        </p>
+        <p>
+          <strong>Пароль:</strong>
+          <input type="text" name="password" />
+        </p>
+      </div>
+      <div class="list">
+        <p><strong>Ваше мнение об искусственном интеллекте?</strong></p>
+        <select name="Ai_think">
+          <option value="Доверяю технологиям ИИ">Доверяю технологиям ИИ</option>
+          <option value="Опасаюсь дальнейшего развития технологий ИИ">Опасаюсь дальнейшего развития технологий ИИ</option>
+          <option value="Недостаточно разбираюсь в вопросе">Недостаточно разбираюсь в вопросе</option>
+        </select>
+      </div>
+      <div class="radio">
+        <p><strong>Используете ли вы помощь ИИ в повседневой жизни?</strong></p>
+        <input type="radio" name="AI_Usage" id="Choice1" value="Использую"/>
+        <label for="Choice1">Использую</label>
+        <br><input type="radio" name="AI_Usage" id="Choice2" value="Не использую" />
+        <label for="Choice2">Не использую</label>
+        <br><input type="radio" name="AI_Usage" id="Choice3" value="Затрудняюсь ответить"/>
+        <label for="Choice3">Затрудняюсь ответить</label>
+      </div>
+      <div class="checkbox">
+        <p>
+          <strong>Используете ли вы что-то из перечисленного ниже?</strong>
+        </p>
+        <input type="checkbox" name="Sound_help" id="Sound_help"/>
+        <label for="Sound_help">Голосовые помощники</label>
+        <br><input type="checkbox" name="Autocar" id="Autocar"/>
+        <label for="Autocar">Автопилот в машине</label>
+        <br><input type="checkbox" name="Amazon" id="Amazon"/>
+        <label for="Amazon">Amazon</label>
+        <br><input type="checkbox" name="GMaps" id="GMaps"/>
+        <label for="GMaps">Google Maps</label>
+      </div>
+      <p></p>
+      <input type="submit" class="submit_button" value="Отправить" />
+    </form>
+  </body>
+</html>

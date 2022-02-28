@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>   <head>
+<body onload="startTime()">
+<script tipe = "text/javascript" src="aler.js"></script>
+<link  href="style/style-1.css" rel=stylesheet type="text/css"></head>
+<meta charset="utf-8">
+<title>Искуственный интелект</title></head>
+<body> 
+  <h1>Искуственный интелект</h1>
+  <h2 id="txt"></h2>
+  
+  <button onclick="alterTime()">Показать секунды</button>
+
+  <br><br><form action="last.php">
+      <button>Получить содержимое базы данных</button>
+  </form>
+
+
+  <a href = "second.html"><br><br>Тест Тьюринга</a>  
+
+  <p style="font-size: 120%; font-family: monospace; color: #cd66cc">Типы искусственного интелекта</p> 
+  <p>Типы искусственного интелекта</p>
+  <ol>
+  <li>Распределенный искусственный интеллект
+    <ol> <li>Возможность продолжения функционирования даже после поломки одного узла</li></li>
+    </ol>
+  <li>Слабый искусственный интеллект
+    <ol> <li>Действует по инструкции, не обладает способностью к обучению</li></li>
+    </ol>
+  <li>Сильный искусственный интеллект
+    <ol> <li>Имитация человеческого мозга</li></li>
+    </ol>
+  </ol> 
+  <img src="img/mainimg.jpg" alt="Где картинка" onclick="ChangeBG()">
+  <br>
+  <input type="text" id="c1">
+  <input type="text" id="c2">
+  <button onclick="addRow()">Добавить</button><br><br>
+  <input type="text" id="c3">
+  <button onclick="rmRow()">Удаление</button>
+  <table border=2 id="myTable">
+    <caption>Способности и ограничения ИИ</caption>
+    <tr> <th>Способности ИИ</th>  <th>Ограничения ИИ</th></tr> 
+    <tr> <td>Высокая способность обработки <br>и решения узких задач</td> <td>Решение творческих задач</td></tr>
+    <tr> <td>Поиск неявной для человека <br>корреляции данных</td> <td>Не обладает интуицией и вдохновением</td></tr>
+    <tr> <td>Оптимизация задач<br><img src="img/aisign.png" alt="Где картинка"></td> <td>Эмоциональная сфера: способность чувствовать, <br>переживать, выстраивать отношения</td></tr>
+  </table>
+  <br><br><br>
+  <div id="footer">
+    &copy; Тихонов Виктор
+  </div>
+</body>   
+</html>
